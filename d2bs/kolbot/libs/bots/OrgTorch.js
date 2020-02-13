@@ -96,26 +96,170 @@ function OrgTorch() {
 
 	// Get fade in River of Flames
 	this.getFade = function () {
-		if (Config.OrgTorch.GetFade && me.classid === 3) {
-			if (!me.getState(159)) {
+	if (Config.OrgTorch.GetFade && me.classid === 3) {  // If configured to get fade && Paladin
+		if (!me.getState(159)) {    // If Fade is not already active                    
 				print("Getting Fade");
-				Pather.useWaypoint(107);
-				Precast.doPrecast(true);
-				Pather.moveTo(7811, 5872);
 
-				if (me.classid === 3 && me.getSkill(125, 1)) {
-					Skill.setSkill(125, 0);
+			var switchItem = null;
+			var item = me.getItem();
+			
+			if (item) {
+				do {
+					if (item.getPrefix(20653)) {    // Treachery
+						switchItem = switchEquippedItem(copyUnit(item), 3);
+						if(!switchItem) {  // Switch armor location
+							print("Found Treachery but failed to switch");
+							return false;
+						} else if(switchItem.gid != item.gid) {
+							print("Switched Treachery");
+						} else {
+							print("No need to switch items");
 				}
+						break;
+					}
 
-				while (!me.getState(159)) {
+				} while (item.getNext());
+			}
+			
+			if(!switchItem) {
+				print("No suitable item found");
+				return false;
+			}
+				
+			
+			Pather.useWaypoint(107);    // River of flame
+			Precast.doPrecast(true);    // Cast BO and Holy Shield
+			Pather.moveTo(7811, 5872);  // move into fire
+
+			if (me.classid === 3 && me.getSkill(125, 1)) {  // if Paladin && Salvation
+				Skill.setSkill(125, 0); // Use Salvation
+			}
+
+			while (!me.getState(159)) { // Until Fade is active
 					delay(100);
 				}
 
 				print("Fade Achieved.");
+			
+			switchItem = switchEquippedItem(switchItem, 3);
+			if(!switchItem) {  // Switch armor location
+				print("Switching back to " + switchItem.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, "") + " failed");
+				return false;
+			} else if(switchItem.gid != item.gid) {
+				print("Sucessfully switched back to " + switchItem.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, ""));
+			}
+			return true;
+		}
+	}
+
+	return false;
+};
+
+this.switchEquippedItem = function (item, bodyLoc) {
+	var itemLocation = -1;
+
+	if(Item.canEquip(item)) { // Item exists and we can equip it
+		switch(item.location) {
+			
+			case 1: // Item equipped self or merc
+				if (item.bodylocation === bodyLoc) {  // self only.. merc does not count
+					itemLocation = 1;
+					return item;
+				}
+				break;
+				
+			case 7: // Item in stash
+				itemLocation = 7;
+				if (!Town.openStash()) {    // Go to stash and open
+					return null;
+			}
+				break;
+				
+			case 6: // Item in cube
+				itemLocation = 6;
+				if (!Cubing.openCube()) {   // Go to cube and open (If cube is in stash, it will be handled automatically)
+					return null;
+		}
+				break;
+				
+			case 3: // Item in inventory
+				itemLocation = 3;
+				break;
+
+			case 0: // Item on ground
+			case 2: // Item in belt (nonsense)
+			case 4: // Item in store
+			case 5: // Item in trade window
+				break;
+		}      
+		
+		//Can't deal with items on ground!
+		if (item.mode === 3) {
+			D2Bot.printToConsole(item.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, "") + " on ground.. no good :(", 9);
+			return null;
+		}
+		
+		//Other item already on the cursor.
+		if (me.itemoncursor && item.mode !== 4) {
+			print(item.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, "") + " already on cursor");
+			return null;
+		}
+		
+		D2Bot.printToConsole("Equipping: " + item.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, ""),9);
+		
+		//Attempt 3 times to pick to cursor if not already.
+		for (i = 0; i < 3; i += 1) {
+			if (item.toCursor()) {
+				clickItem(0, bodyLoc);
+				delay(me.ping * 2 + 500);
+
+				if (item.bodylocation === bodyLoc) {
+					if (getCursorType() === 3) {
+						//Misc.click(0, 0, me);
+
+						var cursorItem = getUnit(100);
+
+						if (cursorItem) {
+							switch(itemLocation) {
+									
+								case 3: // Item was in inventory
+									if (!Storage.Inventory.CanFit(cursorItem) || !Storage.Inventory.MoveTo(cursorItem)) {
+										cursorItem.drop();
+									}
+									break;
+									
+								case 6: // Item was in cube
+									if (!Storage.Cube.CanFit(cursorItem) || !Storage.Cube.MoveTo(cursorItem)) {
+										cursorItem.drop();
+									}
+
+									break;
+									
+								case 7: // Item was in stash
+									if (!Storage.Stash.CanFit(cursorItem) || !Storage.Stash.MoveTo(cursorItem)) {
+										cursorItem.drop();
+									}
+									break;
+									
+								case 0: // Item on the ground
+								case 1: // Item equipped self or merc
+								case 2: // Item in belt (nonsense)
+								case 4: // Item in store
+								case 5: // Item in trade window
+								default:
+									print("Oops, something went wrong placing " + cursorItem.fname.split("\n").reverse().join(" ").replace(/ÿc[0-9!"+<;.*]/, "") + " to original location: " + itemLocation);
+									break;
+							}
+						}
+					}
+
+					return copyUnit(cursorItem);
+				}
 			}
 		}
+	}
 
-		return true;
+	return null;
 	};
 
 	// Open a red portal. Mode 0 = mini ubers, mode 1 = Tristram
@@ -178,10 +322,11 @@ function OrgTorch() {
 		case 133: // Matron's Den
 			Precast.doPrecast(true);
 			Pather.moveToPreset(133, 2, 397, 2, 2, false);
+			Attack.clear(5);
 			Attack.kill(707);
-			//Attack.clear(5);
 			Pickit.pickItems();
 			Town.goToTown();
+
 			break;
 		case 134: // Forgotten Sands
 			Precast.doPrecast(true);
@@ -199,6 +344,7 @@ function OrgTorch() {
 
 			Attack.kill(708);
 			Pickit.pickItems();
+			Attack.clear();
 			Town.goToTown();
 
 			break;
@@ -207,6 +353,7 @@ function OrgTorch() {
 			Pather.moveToPreset(135, 2, 397, 2, 2, false);
 			Attack.kill(706);
 			Pickit.pickItems();
+			Attack.clear();
 			Town.goToTown();
 
 			break;
@@ -261,6 +408,7 @@ function OrgTorch() {
 			Attack.kill(705);
 			Pickit.pickItems();
 			this.checkTorch();
+			Attack.clear();
 
 			break;
 		}
@@ -298,7 +446,7 @@ function OrgTorch() {
 		farmer = TorchSystem.isFarmer();
 
 		this.torchSystemEvent = function (mode, msg) {
-			var obj, farmer;
+			var obj, farmer, did_check = false;
 
 			if (mode === 6) {
 				farmer = TorchSystem.isFarmer();
@@ -330,6 +478,7 @@ function OrgTorch() {
 								neededItems = {pk1: 3 - tkeys, pk2: 3 - hkeys, pk3: 3 - dkeys, rv: this.juvCheck()};
 
 								sendCopyData(null, obj.profile, 6, JSON.stringify({name: "neededItems", value: neededItems}));
+								did_check = True;
 							}
 
 							break;
@@ -345,6 +494,10 @@ function OrgTorch() {
 		Town.move("stash");
 
 		while (true) {
+			if (did_check) {
+				farmer = false;
+			}
+
 			// Abort if the current character isn't a farmer
 			if (!farmer) {
 				break;

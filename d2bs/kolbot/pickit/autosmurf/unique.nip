@@ -221,7 +221,7 @@
 
 //unique charms
 [name] == grandcharm && [quality] == unique # [itemmagicbonus] >= 35 //good gheed's fortune
-[name] == largecharm && [quality] == unique //# [itemaddamazonskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - amazon
+[name] == largecharm && [quality] == unique # [itemaddamazonskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - amazon
 [name] == largecharm && [quality] == unique # [itemaddassassinskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - assassin
 [name] == largecharm && [quality] == unique # [itemaddbarbarianskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - barbarian
 [name] == largecharm && [quality] == unique # [itemadddruidskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - druid
