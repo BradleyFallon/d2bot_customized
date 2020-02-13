@@ -346,8 +346,8 @@ function LoadConfig() {
 	Config.AutoMule.Trigger = [];
 	Config.AutoMule.Force = [561, 566, 571, 576, 581, 586, 601];
 	Config.AutoMule.Exclude = [
-		"[name] >= talrune && [name] < istrune",
-		// "[name] >= 654 && [name] <= 657",
+		"[name] >= korune && [name] < istrune",
+		// "[name] >= 654 && [name] <= 657", // essences
 		"[name] >= 557 && [name] <= 602",
 		"[name] == keyofterror",
 		"[name] == keyofhate",
@@ -413,9 +413,9 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, 584]); // flawless diamond
 
 
-	Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
-	Config.Recipes.push([Recipe.Rune, "Io Rune"]); // Upgrade Pul to Um
-	Config.Recipes.push([Recipe.Rune, "Lum Rune"]); // Upgrade Pul to Um
+	// Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	// Config.Recipes.push([Recipe.Rune, "Io Rune"]); // Upgrade Pul to Um
+	// Config.Recipes.push([Recipe.Rune, "Lum Rune"]); // Upgrade Pul to Um
 	Config.Recipes.push([Recipe.Rune, "Ko Rune"]); // Upgrade Pul to Um
 	Config.Recipes.push([Recipe.Rune, "Lem Rune"]); // Upgrade Pul to Um
 	Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
