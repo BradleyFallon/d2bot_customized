@@ -1,0 +1,220 @@
+//Crankyankee's Copy & Paste
+
+
+
+
+//				Charm's
+
+// ##### Perfect Small Charms #######################################################################
+
+[Name] == cm1 && [Quality] == magic # [PlusDefense] >= 30 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ToHit] >= 36 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxMana] >= 17 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ColdResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [LightResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [PoisonResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MinDamage] >= 1 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3)   
+[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 4 && [ToHit] >= 20
+[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 3 && [ToHit] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # (([FireMaxDam] >= 29 || [LightMaxDam] >= 71 || [ColdMaxDam] >= 20) && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3)) 
+[Name] == cm1 && [Quality] == magic # [FireMaxDam] >= 42 || [LightMaxDam] >= 99 || [ColdMaxDam] >= 29
+[Name] == cm1 && [Quality] == magic # [PoisonLength]*[PoisonMaxDam]/256 >= 141 // Value from Muddy_Waters@epvp. This is probably a little lower than perfect. 
+
+// ##### Perfect Prefix / Good Suffix Small Charms ##################################################
+
+[Name] == cm1 && [Quality] == magic # [PlusDefense] >= 30 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ToHit] >= 36 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxMana] >= 17 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ColdResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [LightResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [PoisonResist] >= 11 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MinDamage] >= 1 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 3 && [ToHit] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # (([FireMaxDam] >= 29 || [LightMaxDam] >= 71 || [ColdMaxDam] >= 20) && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3)) 
+[Name] == cm1 && [Quality] == magic # [FireMaxDam] >= 32 || [LightMaxDam] >= 79 || [ColdMaxDam] >= 19
+[Name] == cm1 && [Quality] == magic # [PoisonLength]*[PoisonMaxDam]/256 >= 91
+
+// ##### Good Prefix / Perfect Suffix Small Charms ##################################################
+
+[Name] == cm1 && [Quality] == magic # [PlusDefense] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ToHit] >= 26 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxMana] >= 12 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 16 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ColdResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [LightResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [PoisonResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 1 && [ToHit] >= 15 && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # (([FireMaxDam] >= 19 || [LightMaxDam] >= 51 || [ColdMaxDam] >= 15) && ([FHR] >= 5 || [ItemGoldBonus] >= 10 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 7 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 3)) 
+
+// ##### Good Prefix / Good Suffix Small Charms #####################################################
+
+[Name] == cm1 && [Quality] == magic # [PlusDefense] >= 20 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ToHit] >= 26 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxMana] >= 12 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 16 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [FireResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [ColdResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [LightResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [PoisonResist] >= 9 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 1 && [ToHit] >= 15 && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3) 
+[Name] == cm1 && [Quality] == magic # (([FireMaxDam] >= 19 || [LightMaxDam] >= 51 || [ColdMaxDam] >= 15) && ([FHR] >= 5 || [ItemGoldBonus] >= 7 || [MaxDamage] >= 1 || [ItemMagicBonus] >= 5 || [MaxHP] >= 15 || [Strength] >= 1 || [Dexterity] >= 1 || [FRW] >= 3)) 
+[Name] == cm1 && [Quality] == magic # [PoisonLength]*[PoisonMaxDam]/256 >= 43 // Value from Muddy_Waters@epvp. This is probably the lowest possible. Acceptable for LLD 
+
+// ##### Perfect Prefix only Small Charms ###########################################################
+
+//[Name] == cm1 && [Quality] == magic # [PlusDefense] >= 30
+//[Name] == cm1 && [Quality] == magic # [ToHit] >= 36
+[Name] == cm1 && [Quality] == magic # [MaxMana] >= 17
+[Name] == cm1 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 20
+//[Name] == cm1 && [Quality] == magic # [FireResist] >= 11
+//[Name] == cm1 && [Quality] == magic # [ColdResist] >= 11
+//[Name] == cm1 && [Quality] == magic # [LightResist] >= 11
+//[Name] == cm1 && [Quality] == magic # [PoisonResist] >= 11
+//[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 3 && [ToHit] >= 20
+//[Name] == cm1 && [Quality] == magic # (([FireMaxDam] >= 29 || [LightMaxDam] >= 71 || [ColdMaxDam] >= 20))
+
+// ##### Perfect Suffix only Small Charms ###########################################################
+
+//[Name] == cm1 && [Quality] == magic # [FHR] >= 5
+[Name] == cm1 && [Quality] == magic # [MaxHP] >= 20
+//[Name] == cm1 && [Quality] == magic # [ItemGoldBonus] >= 10
+//[Name] == cm1 && [Quality] == magic # [ItemMagicBonus] >= 7
+//[Name] == cm1 && [Quality] == magic # [Strength] >= 2
+//[Name] == cm1 && [Quality] == magic # [Dexterity] >= 2
+//[Name] == cm1 && [Quality] == magic # [FRW] >= 3
+
+// ##### LLD Small Charms ###########################################################################
+
+//[Name] == cm1 && [Quality] == magic # ([2] >= 1 || [0] >= 1) && ([51] >= 4 || [58] >= 4 || [tohit] >= 3) && [92] <= 9 
+//[Name] == cm1 && [Quality] == magic # [MaxMana] >= 12 && ([2] >= 2 || [0] >= 2 || [FRW] >= 3 || [58] >= 25 || [51] >= 12 || [FHR] >= 5) &&  [92] <= 30
+//[Name] == cm1 && [Quality] == magic # [MaxHP] >= 15 && ([MaxMana] >= 5 || [ToHit] >= 7 || [39] >= 5 || [41] >= 5 || [58] >= 15 || [51] >= 9 || [PlusDefense] >= 14) && [92] <= 30
+//[Name] == cm1 && [Quality] == magic # [MaxHP] >= 13 && ([MaxMana] >= 7 || [ToHit] >= 7 || [39] >= 9 || [41] >= 9 || [PlusDefense] >= 18) && [92] <= 30
+//[Name] == cm1 && [Quality] == magic # [MaxDamage] >= 3 && ([MaxHP] >= 13 || [FHR] >= 5 || [FRW] >= 3 || [0] >= 2 || [2] >= 2 || [58] >= 25 || [51] >= 12 || [79] >= 10) && [92] <= 30
+
+//***************************************************************************************************
+// ##### Perfect Medium Charms ######################################################################
+
+[Name] == cm2 && [Quality] == magic # [PlusDefense] >= 60 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [ToHit] >= 77 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MaxMana] >= 34 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 32 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [FireResist] >= 15 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [ColdResist] >= 15 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [LightResist] >= 15 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [PoisonResist] >= 15 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MinDamage] >= 2 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MaxDamage] >= 2 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MaxDamage] >= 8 && [ToHit] >= 48
+[Name] == cm2 && [Quality] == magic # [MaxDamage] >= 6 && [ToHit] >= 48 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [ItemMagicBonus] >= 6 && ([FHR] >= 8 || [ItemGoldBonus] >= 22 || [MaxDamage] >= 2 || [MaxHP] >= 35 || [Strength] >= 5 || [Dexterity] >= 5 || [FRW] >= 5) 
+
+// ##### Good Medium Charms #########################################################################
+
+[Name] == cm2 && [Quality] == magic # [ToHit] >= 50 && ([FHR] >= 8 || [ItemGoldBonus] >= 15 || [MaxDamage] >= 2 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MaxMana] >= 25 && ([FHR] >= 8 || [ItemGoldBonus] >= 15 || [MaxDamage] >= 2 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MinDamage] >= 1 && ([FHR] >= 8 || [ItemGoldBonus] >= 15 || [MaxDamage] >= 2 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 5) 
+[Name] == cm2 && [Quality] == magic # [MaxDamage] >= 2 && [ToHit] >= 30 && ([FHR] >= 8 || [ItemGoldBonus] >= 15 || [MaxDamage] >= 2 || [MaxHP] >= 20 || [Strength] >= 2 || [Dexterity] >= 2 || [FRW] >= 5) 
+
+// ##### LLD Medium Charms ##########################################################################
+
+//[Name] == cm2 && [Quality] == magic # [MaxHp] >= 15 && ([MaxMana] >= 2 || [tohit] >= 4 || [58] >= 8 || [PlusDefense] >= 2) && [92] <= 12 
+//[Name] == cm2 && [Quality] == magic # [MaxDamage] >= 6 && ([MaxHP] >= 18 || [FHR] >= 8 || [FRW] >= 5 || [0] >= 5 || [2] >=5) && [92] <= 30
+//[Name] == cm2 && [Quality] == magic # [MaxHp] >= 18 && [MaxMana] >= 20 && [92] <= 30
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// The SUFFIX / PREFIX only and other sections like those in SC are here eliminated due the fact   //
+// the stats vary only a little to those in SC. Using twice a SC with high stats would be better   //
+// than using one Medium. So only the Perfect Charms are added here, besides those which are       //
+// really really worthy Medium Charms. 								   //
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//*****************************************************************************************************
+// ##### Perfect Grand Charms #######################################################################
+
+[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 14 && [ToHit] >= 76
+[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 4 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30) 
+[Name] == cm3 && [Quality] == magic # [Dexterity] >= 6 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+[Name] == cm3 && [Quality] == magic # [Strength] >= 6 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+[Name] == cm3 && [Quality] == magic # [MaxHP] >= 45 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+[Name] == cm3 && [Quality] == magic # [ItemGoldBonus] >= 40 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+[Name] == cm3 && [Quality] == magic # [FHR] >= 12 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+[Name] == cm3 && [Quality] == magic # [FRW] >= 7 && ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30)
+
+// ##### Good Grand Charms ##########################################################################
+
+[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 10 && [ToHit] >= 60
+[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 3 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [Dexterity] >= 4 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [Strength] >= 4 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [MaxHP] >= 25 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [ItemGoldBonus] >= 30 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [FHR] >= 12 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+[Name] == cm3 && [Quality] == magic # [FRW] >= 7 && ([ToHit] >= 50 && [MaxDamage] >= 7 || [PlusDefense] >= 75 || [MinDamage] >= 3 || [ToHit] >= 100 || [ItemMagicBonus] >= 8 || [MaxMana] >= 40 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 || [FireResist] >= 20 || [LightResist] >= 20 || [ColdResist] >= 20 || [PoisonResist] >= 20) 
+
+// ##### Perfect Prefix / Suffix Only Grand Charm ###################################################
+
+//[Name] == cm3 && [Quality] == magic # ([ToHit] >= 76 && [MaxDamage] >= 10 || [PlusDefense] >= 100 || [MinDamage] >= 3 || [ToHit] >= 132 || [ItemMagicBonus] >= 12 || [MaxMana] >= 59 || [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 60 || [FireResist] >= 30 || [LightResist] >= 30 || [ColdResist] >= 30 || [PoisonResist] >= 30 || [PoisonMinDam] >= 100 || [ColdMinDam] >= 13 && [ColdMaxDam] >= 25 || [FireMinDam] >= 18 && [FireMaxDam] >= 36 || [LightMinDam] >= 1 && [LightMaxDam] >= 79) 
+//[Name] == cm3 && [Quality] == magic # ([MaxDamage] >= 4 || [Dexterity] >= 6 [Strength] >= 6 [MaxHP] >= 45 [ItemGoldBonus] >= 40 [FHR] >= 12 [FRW] >= 7 [LightMinDam] >= 1 && [LightMaxDam] >= 23 [ColdMinDam] >= 6 && [ColdMaxDam] >= 11 [FireMinDam] >= 7 && [FireMaxDam] >= 14)        
+
+// ##### LLD Grand Charms ###########################################################################
+
+//[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 10 && ([FRW] >= 7 || [FHR] >= 12 || [0] >= 6 || [2] >= 6 || [79] >= 39) 
+//[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 10 && [MaxHp] >= 22 && [92] <= 30
+//[Name] == cm3 && [Quality] == magic # [MaxHp] >= 23 && [MaxMana] >= 40 && [92] <= 30
+//[Name] == cm3 && [Quality] == magic # [MaxDamage] >= 6 && ([MaxHp] >= 18 || [FRW] >= 7 || [FHR] >= 12 || [0] >= 6 || [2] >= 6) && [92] <= 18
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// The SUFFIX / PREFIX only and other sections like those in SC are here eliminated due the fact   //
+// the stats vary only a little to those in SC. Using 3x a SC with high stats would be better      //
+// than using one Medium. So only the Perfect Charms are added here, besides those which are       //
+// really really worthy Grand Charms. 								   //
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ##### Skillers ###################################################################################
+
+// ***** BARBARIAN **********************************************************************************
+//[Name] == cm3 && [Quality] == magic # [MasteriesSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [BarbCombatSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [WarCriesskilltab] >= 1
+// ***** ASSASIN ************************************************************************************
+//[Name] == cm3 && [Quality] == magic # [TrapsSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [ShadowDisciplinesSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [MartialArtsSkillTab] >= 1
+// ***** AMAZON *************************************************************************************
+//[Name] == cm3 && [Quality] == magic # [JavelinAndSpearSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [PassiveandMagicSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [BowAndCrossbowSkillTab] >= 1
+// ***** DRUID **************************************************************************************
+//[Name] == cm3 && [Quality] == magic # [ShapeShiftingSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [ElementalSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [DruidSummoningSkillTab] >= 1
+// ***** SORCERESS **********************************************************************************
+[Name] == cm3 && [Quality] == magic # [FireSkillTab] >= 1
+[Name] == cm3 && [Quality] == magic # [ColdSkillTab] >= 1
+[Name] == cm3 && [Quality] == magic # [LightningSkillTab] >= 1
+// ***** PALADIN ************************************************************************************
+[Name] == cm3 && [Quality] == magic # [PaliCombatSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [OffensiveAurasSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [DefensiveAurasSkilltab] >= 1
+// ***** NECROMANCER ********************************************************************************
+//[Name] == cm3 && [Quality] == magic # [PoisonAndBoneSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [CursesSkillTab] >= 1
+//[Name] == cm3 && [Quality] == magic # [NecromancerSummoningSkillTab] >= 1
+// ***** ALL SKILLERS WITH ADDS *********************************************************************
+[Name] == cm3 && [Quality] == magic # [188] >= 1 && ([MaxHp] >= 20 || [FRW] >= 7 || [FHR] >= 12 || [Strength] >= 6 || [Dexterity] >= 6 || [ItemGoldBonus] >= 35 || [MaxDamage] >= 4)
+
+// ##### Unique Charms ##############################################################################
+
+// ***** Small Charms *******************************************************************************
+//[Name] == cm1 && [Quality] == unique // Annihilus
+
+// ***** Large Charms *******************************************************************************
+//[Name] == cm2 && [Quality] == unique // Hellfire Torch
+
+// ***** Grand Charms *******************************************************************************
+//[Name] == cm3 && [Quality] == unique # [ItemReducedPrices] >= 15 && [ItemMagicBonus] >= 40 // Gheed's Luck Charm
