@@ -56,12 +56,12 @@ function LoadConfig() {
 		Scripts.Tristram = false;
 			Config.Tristram.WalkClear = true; // Disable teleport while clearing to protect leechers
 			Config.Tristram.PortalLeech = false; // Set to true to open a portal for leechers.
-		Scripts.Pit = false;
+		Scripts.Pit = true;
 			Config.Pit.ClearPit1 = true;
 		Scripts.Treehead = false;
 		Scripts.Smith = false;
 		Scripts.BoneAsh = false;
-		Scripts.Countess = true;
+		Scripts.Countess = false;
 			Config.Countess.KillGhosts = true;
 		Scripts.Andariel = true;
 		Scripts.Cows = false;
@@ -74,7 +74,7 @@ function LoadConfig() {
 		Scripts.AncientTunnels = false;
 			Config.AncientTunnels.OpenChest = true; // Open special chest in Lost City
 			Config.AncientTunnels.KillDarkElder = true;
-		Scripts.Summoner = true;
+		Scripts.Summoner = false;
 			Config.Summoner.FireEye = true;
 		Scripts.Tombs = false;
 		Scripts.Duriel = false;
@@ -116,7 +116,7 @@ function LoadConfig() {
 			Config.Pindleskin.UseWaypoint = true;
 			Config.Pindleskin.KillNihlathak = false;
 			Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
-		Scripts.Nihlathak = true;
+		Scripts.Nihlathak = false;
 			Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 		Scripts.Eldritch = false;
 			Config.Eldritch.OpenChest = false;
@@ -180,7 +180,7 @@ function LoadConfig() {
 
 	// *** special scripts ***
 	Scripts.WPGetter = false; // Get missing waypoints
-	Scripts.GetKeys = false;  // Hunt for T/H/D keys
+	Scripts.GetKeys = true;  // Hunt for T/H/D keys
 	Scripts.OrgTorch = false;
 		Config.OrgTorch.MakeTorch = true; // Convert organ sets to torches
 		Config.OrgTorch.WaitForKeys = false; // Enable Torch System to get keys from other profiles. See libs/TorchSystem.js for more info
@@ -220,7 +220,7 @@ function LoadConfig() {
 		Config.ShopBot.ScanIDs = [187, 188, 194, 195, 326, 327, 338, 373, 397, 443, 449];
 		Config.ShopBot.CycleDelay = 0; // Delay between shopping cycles in milliseconds, might help with crashes.
 		Config.ShopBot.QuitOnMatch = false; // Leave game as soon as an item is shopped.
-	Scripts.ChestMania = false; //true; // Open chests in configured areas. See sdk/areas.txt
+	Scripts.ChestMania = true; //true; // Open chests in configured areas. See sdk/areas.txt
 		Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
 		Config.ChestMania.Act2 = []; // [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
 		Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
