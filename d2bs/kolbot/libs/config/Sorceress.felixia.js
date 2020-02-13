@@ -225,7 +225,7 @@ function LoadConfig() {
 		Config.ChestMania.Act2 = []; // [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
 		Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
 		Config.ChestMania.Act4 = []; // List of act 4 areas to open chests in
-		Config.ChestMania.Act5 = [115, 116, 119, 125, 126, 127]; // List of act 5 areas to open chests in
+		Config.ChestMania.Act5 = [116, 125, 126, 127]; // List of act 5 areas to open chests in    removed: 115 [Glacial Trail], 119 [Icy Cellar]    (because crashes here occasionally)
 	Scripts.ClearAnyArea = false; // Clear any area. Uses Config.ClearType to determine which type of monsters to kill.
 		Config.ClearAnyArea.AreaList = []; // List of area ids to clear. See sdk/areas.txt
 
