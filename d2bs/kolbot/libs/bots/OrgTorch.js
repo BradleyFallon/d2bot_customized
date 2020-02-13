@@ -446,7 +446,7 @@ this.switchEquippedItem = function (item, bodyLoc) {
 		farmer = TorchSystem.isFarmer();
 
 		this.torchSystemEvent = function (mode, msg) {
-			var obj, farmer, did_check = false;
+			var obj, farmer;
 
 			if (mode === 6) {
 				farmer = TorchSystem.isFarmer();
@@ -478,7 +478,6 @@ this.switchEquippedItem = function (item, bodyLoc) {
 								neededItems = {pk1: 3 - tkeys, pk2: 3 - hkeys, pk3: 3 - dkeys, rv: this.juvCheck()};
 
 								sendCopyData(null, obj.profile, 6, JSON.stringify({name: "neededItems", value: neededItems}));
-								did_check = True;
 							}
 
 							break;
@@ -494,9 +493,6 @@ this.switchEquippedItem = function (item, bodyLoc) {
 		Town.move("stash");
 
 		while (true) {
-			if (did_check) {
-				farmer = false;
-			}
 
 			// Abort if the current character isn't a farmer
 			if (!farmer) {
