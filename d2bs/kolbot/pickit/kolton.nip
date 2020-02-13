@@ -1341,7 +1341,13 @@
 
  
 
-[name] == largecharm && [quality] == unique
+[name] == largecharm && [quality] == unique # [itemaddamazonskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - amazon
+[name] == largecharm && [quality] == unique # [itemaddassassinskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - assassin
+[name] == largecharm && [quality] == unique # [itemaddbarbarianskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - barbarian
+[name] == largecharm && [quality] == unique # [itemadddruidskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - druid
+[name] == largecharm && [quality] == unique # [itemaddnecromancerskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - necromancer
+[name] == largecharm && [quality] == unique # [itemaddsorceressskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - sorceress
+[name] == largecharm && [quality] == unique # [itemaddpaladinskills] == 3 && [strength] >= 10 && [fireresist] >= 10 //hellfire torch - paladin
 
  
 
