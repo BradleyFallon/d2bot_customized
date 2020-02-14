@@ -38,7 +38,7 @@ function LoadConfig() {
 
 	var doingMF = true;
 	var doingDiablo = false;
-	var doingBaal = false;
+	var doingBaal = true;
 
 	if (doingMF) {
 		// *** act 1 ***
