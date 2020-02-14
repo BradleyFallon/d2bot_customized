@@ -22,8 +22,8 @@ var AutoMule = {
 			stopProfileKeyRelease: true, // true = stopProfile key will get released on stop. useful when using 100% of your keys for botting.
 
 			// Trigger muling at the end of a game if used space in stash and inventory is equal to or more than given percent.
-			usedStashTrigger: 80,
-			usedInventoryTrigger: 80,
+			usedStashTrigger: 85,
+			usedInventoryTrigger: 85,
 
 			// Mule items that have been stashed at some point but are no longer in pickit.
 			muleOrphans: true
@@ -274,7 +274,7 @@ MainLoop:
 
 	inGameCheck: function () {
 		var muleObj, tick, info,
-			timeout = 150 * 1000, // Ingame mule timeout
+			timeout = 15 * 60 * 1000, // Ingame mule timeout
 			status = "muling";
 
 		// Single player

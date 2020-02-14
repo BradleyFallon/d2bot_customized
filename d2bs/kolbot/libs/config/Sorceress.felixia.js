@@ -564,7 +564,7 @@ function LoadConfig() {
 	// General config
 	Config.AutoMap = true; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 500; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MinGameTime = 60*10; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = true; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; //true; // Open chests. Controls key buying.
